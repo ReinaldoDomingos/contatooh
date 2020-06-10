@@ -1,10 +1,8 @@
 <div class="jumbotron">
-    <h1 class="text-center">Bem-vindo ao Contatooh</h1>    
+    <h1 class="text-center">Bem-vindo ao Contatooh</h1>
 </div>
-<p ng-show="mensagem.texto">
-    {{mensagem.texto}}
-</p>
-<a ng-href="#!/contato" class="btn btn-primary" ng-click="incrementa()">Novo Contato</a>
+<p ng-show="mensagem.texto">{{mensagem.texto}}</p>
+<a ng-href="#!/contato" class="btn btn-primary">Novo Contato</a>
 <input ng-model="filtro" type="search" placeholder="Digite parte do nome">
 <p ng-show="contatos.length">Contatos cadastrados: {{contatos.length}}</p>
 <p class="text-info" ng-hide="contatos.length">Não há contatos cadastrados</p>

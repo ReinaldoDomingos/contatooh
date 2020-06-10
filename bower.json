@@ -3,18 +3,22 @@
   "description": "",
   "main": "server.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/ReinaldoDomingos/contatooh",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "public/vendor"
   ],
   "dependencies": {
     "angular": "^1.7.8",
     "angular-route": "^1.7.8",
     "bootstrap": "^4.3.1",
     "angular-resource": "^1.7.8"
-  }
+  },
+  "authors": [
+    "ReinaldoDomingos <reijunior100@gmail.com>"
+  ]
 }
