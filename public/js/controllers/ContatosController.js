@@ -9,34 +9,6 @@ angular.module('contatooh').controller('ContatosController',
             $scope.total++;
         };
 
-        // $http.get('/contatos') //até versão 1.4.3 AngularJS
-        //     .success(function (data) {
-        //         $scope.contatos = data;
-        //     })
-        //     .error(function (statusText) {
-        //         console.log("Não foi possível obter a lista de contatos");
-        //         console.log(statusText);
-        //     });
-
-        // $http({ //Versões superiores angular
-        //     method: 'GET',
-        //     url: '/contatos'
-        // }).then(function (response) {
-        //     $scope.contatos = response.data;
-        // }, function (error) {
-        //     console.log("Não foi possível obter a lista de contatos");
-        //     console.log(error);
-        // });
-
-//            var promise = Contato.query().$promise;
-//            promise // Requisição padrão REST
-//                    .then(function (contatos) {
-//                        $scope.contatos = contatos;
-//                    })
-//                    .catch(function (erro) {
-//                        console.log("Não foi possível obter a lista de contatos");
-//                        console.log(erro);
-//                    });
         function buscaContatos() {
             Contato.query(
                 function (contatos) {
