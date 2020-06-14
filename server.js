@@ -1,11 +1,9 @@
 var http = require('http');
 var app = require('./config/express')();
-
-// http.createServer('Aqui entra o Express com seus middlewares')
-//        .listen(3000, '127.0.0.1');
+require('./config/database.js')('mongodb://localhost/contatooh');
 
 http.createServer(app).listen(app.get('port'), function () {
     console.log("Express Server escutando na porta " +
-            app.get('port'));
-})  ;
+        app.get('port'));
+})
         
